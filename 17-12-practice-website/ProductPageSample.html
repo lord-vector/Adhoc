@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+
+    <style>
+            #nav-bar {
+                /* position: fixed; */
+                top: 0px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(255, 255, 255);
+                /* overflow: hidden; */
+    }
+    header > nav > img{
+        width:150px;
+        height:50px;
+    }
+    ul{
+        list-style:none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .nav-link{
+        display: block;
+        float:left;
+        align-items: center;
+        padding: 18px 12px;
+        font-size: 15px;
+    }
+    #header{
+        display: flex;
+        height: 70px;
+    }
+    .message-box{
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+
+
+    }
+    .message-box input{
+        display: block;
+        margin:auto;
+        width:30%;
+        margin-bottom: 8px;
+    }
+    #submit{
+        background-color: orange;
+        border: 2px solid black;
+        padding: 5px 30px;
+    }
+
+    #features{
+        display: flex;
+        flex-direction: column;
+        margin:5px;
+        padding:5px;
+    }
+    #features .feature{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    #features .feature i{
+        color:orange;
+       
+    }
+    #features .feature p{
+        font-size: 14px;
+    }
+    #features .feature div h2{
+        margin-bottom: 3px;
+    }
+
+    #how-it-work{
+        padding:30px;
+        /* margin: auto; */
+        text-align: center;
+    }
+    #how-it-work #video{
+        width:600px;
+        height: 300px;
+   }
+
+   #pricing{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .price-box {
+    border: 2px solid black;
+    flex:1;
+    text-align: center;
+    margin: 10px auto;
+    width: 80vw;
+   }
+
+   .price-box  a {
+    margin-bottom: 0;
+   }
+
+   .price-box  h3 {
+    background-color: slategray;
+    margin-top: 0;
+   }
+
+   .price-box  h2 {
+    height: 10%;
+   }
+
+   .price-box  p {
+    height: 50%;
+   }
+
+   .price-box:first-child {
+    margin-right: 3px;
+    margin-left: 0;;
+   }
+
+   #main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    background-color: slategray;
+   }
+
+   #main-footer div a {
+    margin: 0 10px;
+    padding: 0 2px;
+    color: brown;
+   }
+
+   #main-footer .my-name {
+    margin-bottom: 5px;
+   }
+
+    </style>
+</head>
+
+    <body>
+        <header id="header">
+          <nav id="nav-bar">
+            <img id="header-img" src="https://1000logos.net/wp-content/uploads/2020/03/United-Colors-of-Benetton-Logo-1977.png" alt="logo" class="logo">
+            <ul>
+              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#how-it-work">How It Works</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </ul>
+          </nav>
+        </header>
+      
+        <div id="container">
+          <section class="message-box">
+            <h1>Sample products for shopping</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="example@mail.com">
+            <input id="submit" type="submit" value="Get Started" class="btn"></input>
+            </form>
+          </section>
+      
+          <section id="features">
+            <div class="feature">
+              <i class="fab fa-free-code-camp fa-3x"></i>
+              <div>
+                <h2>Quality products</h2>
+                <p>Our products are of premium quality.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-shipping-fast fa-3x"></i>
+              <div>
+                <h2>Fast Shipping</h2>
+                <p>We make sure you receive your product timely. We also provide free returns
+                  if you are not satisfied.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-battery-full fa-3x"></i>
+              <div>
+                <h2>Quality Assurance</h2>
+                <p> we will ensure there are no damages or faults </p>
+              </div>
+            </div>
+          </section>
+          <section id="how-it-work">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8pq_tCgDkT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+          <section id="pricing">
+            <div class="price-box">
+              <h3>lorem</h3>
+              <h2>$600</h2>
+              <p>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem deleniti culpa corrupti id tempore voluptas reiciendis suscipit eum et pariatur? Inventore unde rem explicabo eum?</p>
+              <a href="#" class="btn">SELECT</a>
+            </div>
+            <div class="price-box">
+              <h3>Lorem, ipsum.</h3>
+              <h2>$900</h2>
+              <p>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum.</p>
+              <a href="#" class="btn">SELECT</a>
+            </div>
+            <div class="price-box">
+              <h3>Lorem, ipsum.</h3>
+              <h2>$1200</h2>
+              <p>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum.</p>
+              <a href="#" class="btn">SELECT</a>
+            </div>
+          </section>
+        </div>
+        <!-- FOOTER -->
+        <footer id="main-footer">
+          <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+          </div>
+          <p class="my-name">This Page recreated by <a target="_blank" id="fcs" href="">shakul malik</a></p>
+          <p>&copy;Copyright 2022,Herovired</p>
+        </footer>
+      
+</body>
+</html>
