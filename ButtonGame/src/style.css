@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.create {
+  background-color: #ffff00;
+  cursor: pointer;
+}
+
+.update {
+  background-color: #ff00ff;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #ff0000;
+  cursor: pointer;
+}
