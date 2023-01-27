@@ -1,0 +1,16 @@
+.container{
+    width: 600px;
+    background-color: #efefef;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 1rem;
+}
+
+.item{
+    font-size: 2rem;
+    background-color: royalblue;
+    color: #fff;
+    text-align: center;
+}
